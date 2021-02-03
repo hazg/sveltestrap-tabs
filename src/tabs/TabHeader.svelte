@@ -1,7 +1,8 @@
 <script>
+	import { Nav } from 'sveltestrap';
 	export let id = 'svelte'
 </script>
 
-<ul class="nav nav-tabs" {id} role="tablist">
+<Nav tabs {id} role="tablist">
 	<slot />
-</ul>
+</Nav>

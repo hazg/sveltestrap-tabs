@@ -1,5 +1,8 @@
 <script>
+	import { NavItem, NavLink } from 'sveltestrap';
+
 	export let id;
+
 
 	const handleClick = (e) => {
 		e.preventDefault()
@@ -27,9 +30,8 @@
 	}
 </script>
 
-<li class="nav-item" role="presentation">
-	<a
-		class={`nav-link`}
+<NavItem>
+	<NavLink
 		id={`${id}-tab`}
 		data-toggle="tab"
 		href={`#${id}`}
@@ -37,5 +39,5 @@
 		aria-controls={id}
 		on:click={handleClick}>
 		<slot />
-	</a>
-</li>
+	</NavLink>
+</NavItem>
