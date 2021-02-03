@@ -1,5 +1,5 @@
-<script lang="ts">
-	export let id: string = 'svelte';
+<script>
+	export let id = 'svelte'
 </script>
 
 <div class="tab-content" id={`${id}Content`}>

@@ -1,5 +1,5 @@
-<script lang="ts">
-	export let id: string = 'svelte';
+<script>
+	export let id = 'svelte'
 </script>
 
 <ul class="nav nav-tabs" {id} role="tablist">

@@ -1,16 +1,16 @@
-<script lang="ts">
-	export let id!: string;
+<script>
+	export let id;
 
-	const handleClick = (e: MouseEvent) => {
-		e.preventDefault();
+	const handleClick = (e) => {
+		e.preventDefault()
 
-		const target = e.target as HTMLElement;
-		let headParent = target.parentElement.parentElement;
-		let contentParent = headParent.nextElementSibling;
+		const target = e.target
+		let headParent = target.parentElement.parentElement
+		let contentParent = headParent.nextElementSibling
 
 		headParent.querySelectorAll("li").forEach((el) => {
-			let element = el.firstChild as HTMLElement;
-			element.classList.remove("active");
+			let element = el.firstChild;
+			element.classList.remove("active")
 		});
 
 		contentParent.querySelectorAll(".tab-pane").forEach((nel) => {
@@ -22,9 +22,9 @@
 		});
 
 		if (target.id === `${id}-tab`) {
-			target.classList.add("active");
+			target.classList.add("active")
 		}
-	};
+	}
 </script>
 
 <li class="nav-item" role="presentation">

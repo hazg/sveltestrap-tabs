@@ -5,16 +5,38 @@ This is a simple solution of Bootstrap taps issue.
 
 ## Get started
 
-Install the dependencies...
-
 ```bash
-cd sveltestrap-tabs
-npm install or 
+yarn add hazg/sveltestrap-tabs
 ```
+
+```svelte
+<script>
+  import { Tabs, TabHeader, Tab, TabContent, TabContentItem } from "sveltestrap-tabs"
+</script>
+
+<Tabs defaultId="one">
+
+  <TabHeader>
+    <Tab id="one">One</Tab>
+    <Tab id="two">Two</Tab>
+  </TabHeader>
+
+  <TabContent>
+    <TabContentItem id="one">
+      first tab content
+    </TabContentItem>
+    <TabContentItem id="two">
+      second tab content
+    </TabContentItem>
+  </TabContent>
+```
+
 
 ## Author
 
-[@sonjoydatta](https://github.com/sonjoydatta) for more info.
+Original author: [@sonjoydatta](https://github.com/sonjoydatta) for more info.
+
+Fork author: [@hazg](https://github.com/hazg)
 
 ## License
 
