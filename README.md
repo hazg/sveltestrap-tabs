@@ -29,6 +29,7 @@ yarn add hazg/sveltestrap-tabs
       second tab content
     </TabContentItem>
   </TabContent>
+</Tabs>
 ```
 
 
