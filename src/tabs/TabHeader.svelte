@@ -3,6 +3,6 @@
 	export let id = 'svelte'
 </script>
 
-<Nav tabs {id} role="tablist">
+<Nav tabs {id} role="tablist" {...$$props}>
 	<slot />
 </Nav>
